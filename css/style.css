@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(139 226 196);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 500px;
+
+}
+.first{
+    width: 100px;
+    height: 25px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: aliceblue;
+    font-size: 32px;
+
+}
+.first::before{
+    content:"";
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    position: absolute;
+    left: 70px;
+
+}
+.first::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    position: absolute;
+    right: 70px;
+    
+}
